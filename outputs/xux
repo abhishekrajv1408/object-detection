@@ -1,0 +1,7 @@
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', '--input', help='path to the input video',
+                    required=True)
+parser.add_argument('-c', '--consecutive-frames', default=4, type=int,
+                    dest='consecutive_frames', help='path to the input video')
+args = vars(parser.parse_args())
+import argparse
